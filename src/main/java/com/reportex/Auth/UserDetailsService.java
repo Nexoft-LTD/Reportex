@@ -1,4 +1,4 @@
-package com.reportex.auth;
+package com.reportex.Auth;
 
 import java.util.ArrayList;
 import java.util.HashMap;

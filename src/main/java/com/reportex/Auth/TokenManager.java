@@ -1,4 +1,4 @@
-package com.reportex.auth;
+package com.reportex.Auth;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

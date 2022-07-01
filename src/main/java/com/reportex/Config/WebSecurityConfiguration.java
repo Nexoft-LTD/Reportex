@@ -1,7 +1,7 @@
-package com.reportex;
+package com.reportex.Config;
 
-import com.reportex.auth.JwtTokenFilter;
-import com.reportex.auth.UserDetailsService;
+import com.reportex.Auth.JwtTokenFilter;
+import com.reportex.Auth.UserDetailsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

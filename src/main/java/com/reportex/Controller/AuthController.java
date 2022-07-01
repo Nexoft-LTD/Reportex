@@ -1,7 +1,7 @@
-package com.reportex.api;
+package com.reportex.Controller;
 
-import com.reportex.auth.TokenManager;
-import com.reportex.request.LoginRequest;
+import com.reportex.Auth.TokenManager;
+import com.reportex.Model.LoginRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;

@@ -1,4 +1,4 @@
-package com.reportex.request;
+package com.reportex.Model;
 
 public class LoginRequest {
     private String username;

@@ -1,4 +1,4 @@
-package com.reportex.auth;
+package com.reportex.Auth;
 
 import java.io.IOException;
 import java.util.ArrayList;
