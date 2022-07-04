@@ -1,8 +1,15 @@
 package com.reportex.Model;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
+@ApiModel(description = "This is login model")
 public class LoginRequest {
+
+    @ApiModelProperty(notes = "Username for login", required = true)
     private String username;
 
+    @ApiModelProperty(notes = "Password for login", required = true)
     private String password;
 
     public LoginRequest() {
