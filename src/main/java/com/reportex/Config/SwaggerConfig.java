@@ -16,12 +16,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
-//    @Api - Rest Controller dokümantasyonu.
-//    @ApiModel - Rest API Model dokümantasyonu
-//    @ApiModelProperty - Model property dokümantasyonu
-//    @ApiOperation - Rest method dokümantasyonu
-//    @ApiParam - Method parametresi dokümantasyonu
-//    @ApiResponse - Method Response nesnesi icin dokümantasyonu
+//    @Api - Rest Controller
+//    @ApiModel - Rest API Model
+//    @ApiModelProperty - Model property
+//    @ApiOperation - Rest method
+//    @ApiParam - Method parametr
+//    @ApiResponse - Method Response
 
     @Bean
     public Docket api() {
