@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessageController {
     @GetMapping
     public ResponseEntity<String> getMessage() {
-        return ResponseEntity.ok("Merhaba JWT");
+        return ResponseEntity.ok("Salam JWT");
     }
 }
