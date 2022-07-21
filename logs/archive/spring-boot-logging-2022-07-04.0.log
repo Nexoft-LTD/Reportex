@@ -1,0 +1,16 @@
+04-07-2022 18:27:06.305 INFO org.springframework.boot.StartupInfoLogger [main] Starting ReportexApplication using Java 1.8.0_202 on DESKTOP-1FHAGA2 with PID 8980 (D:\MyWork\Reportex\target\classes started by 99470 in D:\MyWork\Reportex)
+04-07-2022 18:27:06.307 INFO org.springframework.boot.SpringApplication [main] The following 1 profile is active: "dev"
+04-07-2022 18:27:07.169 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 5555 (http)
+04-07-2022 18:27:07.176 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+04-07-2022 18:27:07.176 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.63]
+04-07-2022 18:27:07.291 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+04-07-2022 18:27:07.291 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 955 ms
+04-07-2022 18:27:08.277 INFO org.springframework.security.web.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6d5c2745, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@44b29496, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f5538a1, org.springframework.security.web.header.HeaderWriterFilter@63884e4, org.springframework.security.web.authentication.logout.LogoutFilter@2d3ef181, com.reportex.Auth.JwtTokenFilter@77a2aa4a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f9f381d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79a04e5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1947596f, org.springframework.security.web.session.SessionManagementFilter@67514bdd, org.springframework.security.web.access.ExceptionTranslationFilter@ae2db25, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@aaa0f76]
+04-07-2022 18:27:08.519 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 5555 (http) with context path ''
+04-07-2022 18:27:08.523 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Context refreshed
+04-07-2022 18:27:08.536 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+04-07-2022 18:27:08.542 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [main] Scanning for api listing references
+04-07-2022 18:27:08.643 INFO org.springframework.boot.StartupInfoLogger [main] Started ReportexApplication in 2.754 seconds (JVM running for 3.887)
+04-07-2022 18:27:39.020 INFO org.apache.juli.logging.DirectJDKLog [http-nio-5555-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+04-07-2022 18:27:39.020 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-5555-exec-1] Initializing Servlet 'dispatcherServlet'
+04-07-2022 18:27:39.021 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-5555-exec-1] Completed initialization in 1 ms
