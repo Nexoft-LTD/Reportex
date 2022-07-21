@@ -5,13 +5,12 @@ import com.reportex.Entity.User;
 import com.reportex.Repository.UserRepository;
 import com.reportex.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
 import javax.transaction.Transactional;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 @Service
 @Transactional
@@ -22,6 +21,9 @@ public class UserServiceImpl implements UserService {
 
     @Autowired
     UserService userService;
+
+    @Autowired
+    BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Override
     public List<UserDto> findAll() {
@@ -39,6 +41,16 @@ public class UserServiceImpl implements UserService {
             userDtoList.add(userDto);
         }
         return userDtoList;
+    }
+
+    @Override
+    public Map<String, String> findAllUserName() {
+        List<User> userList = userRepository.findAll();
+        Map<String, String> usersMap = new HashMap<>();
+        for (User user : userList) {
+            usersMap.put(user.getUserName(), user.getPassword());
+        }
+        return usersMap;
     }
 
     @Override
@@ -66,7 +78,7 @@ public class UserServiceImpl implements UserService {
         user.setFullName(userDto.getFullName());
         user.setEmail(userDto.getEmail());
         user.setUserName(userDto.getUsername());
-        user.setPassword(userDto.getPassword());
+        user.setPassword(bCryptPasswordEncoder.encode(userDto.getPassword()));
 
         User userDb = userRepository.save(user);
         userDto.setId(userDb.getId());
