@@ -17,8 +17,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 public class SwaggerConfig {
 
 //    @Api - Rest Controller
-//    @ApiModel - Rest API Model
-//    @ApiModelProperty - Model property
+//    @ApiModel - Rest API Entity
+//    @ApiModelProperty - Entity property
 //    @ApiOperation - Rest method
 //    @ApiParam - Method parametr
 //    @ApiResponse - Method Response

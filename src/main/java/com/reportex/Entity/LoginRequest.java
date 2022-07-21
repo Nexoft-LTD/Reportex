@@ -1,9 +1,9 @@
-package com.reportex.Model;
+package com.reportex.Entity;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
-@ApiModel(description = "This is login model")
+@ApiModel(description = "This is login entity")
 public class LoginRequest {
 
     @ApiModelProperty(notes = "Username for login", required = true)
