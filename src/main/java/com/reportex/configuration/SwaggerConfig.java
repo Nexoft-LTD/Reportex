@@ -1,4 +1,4 @@
-package com.reportex.Config;
+package com.reportex.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,12 +16,12 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 public class SwaggerConfig {
 
-//    @Api - Rest Controller
-//    @ApiModel - Rest API Entity
-//    @ApiModelProperty - Entity property
-//    @ApiOperation - Rest method
-//    @ApiParam - Method parametr
-//    @ApiResponse - Method Response
+//    @Api - rest controller
+//    @ApiModel - rest api entity
+//    @ApiModelProperty - entity property
+//    @ApiOperation - rest method
+//    @ApiParam - method parametr
+//    @ApiResponse - method response
 
     @Bean
     public Docket api() {

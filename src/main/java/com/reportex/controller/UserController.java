@@ -1,7 +1,7 @@
-package com.reportex.Controller;
+package com.reportex.controller;
 
-import com.reportex.Dto.UserDto;
-import com.reportex.Service.Impl.UserServiceImpl;
+import com.reportex.dto.UserDto;
+import com.reportex.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

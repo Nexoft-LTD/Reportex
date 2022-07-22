@@ -1,9 +1,9 @@
-package com.reportex.Service.Impl;
+package com.reportex.service.impl;
 
-import com.reportex.Dto.UserDto;
-import com.reportex.Entity.User;
-import com.reportex.Repository.UserRepository;
-import com.reportex.Service.UserService;
+import com.reportex.dto.UserDto;
+import com.reportex.entity.User;
+import com.reportex.repository.UserRepository;
+import com.reportex.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

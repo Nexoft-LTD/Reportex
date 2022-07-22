@@ -1,7 +1,7 @@
-package com.reportex.Controller;
+package com.reportex.controller;
 
-import com.reportex.Auth.TokenManager;
-import com.reportex.Entity.LoginRequest;
+import com.reportex.auth.TokenManager;
+import com.reportex.entity.LoginRequest;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;

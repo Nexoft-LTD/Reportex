@@ -1,4 +1,4 @@
-package com.reportex.Entity;
+package com.reportex.entity;
 
 import lombok.*;
 

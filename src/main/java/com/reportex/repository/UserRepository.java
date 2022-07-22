@@ -1,10 +1,8 @@
-package com.reportex.Repository;
+package com.reportex.repository;
 
-import com.reportex.Entity.User;
+import com.reportex.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 public interface UserRepository extends JpaRepository<User, Integer> {

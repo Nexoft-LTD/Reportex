@@ -1,4 +1,4 @@
-package com.reportex.Dto;
+package com.reportex.dto;
 
 import lombok.*;
 

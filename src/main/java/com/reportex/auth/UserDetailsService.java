@@ -1,11 +1,9 @@
-package com.reportex.Auth;
+package com.reportex.auth;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
-import javax.annotation.PostConstruct;
 
-import com.reportex.Service.Impl.UserServiceImpl;
+import com.reportex.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;

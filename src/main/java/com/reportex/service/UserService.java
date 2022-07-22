@@ -1,6 +1,6 @@
-package com.reportex.Service;
+package com.reportex.service;
 
-import com.reportex.Dto.UserDto;
+import com.reportex.dto.UserDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
