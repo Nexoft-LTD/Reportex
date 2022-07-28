@@ -6,8 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class ReportexApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ReportexApplication.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(ReportexApplication.class, args);
+    }
 }
