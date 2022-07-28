@@ -10,19 +10,14 @@ import java.util.Date;
 @Entity
 @Table(name = "template_1")
 @Data
-@ToString
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 @NamedStoredProcedureQuery(name = "template1.temp_1_2",
         procedureName = "f_temp_1_2",
-        resultClasses = {Template1.class},
+        resultClasses = {Template_1.class},
         parameters = {@StoredProcedureParameter(type = void.class, mode = ParameterMode.REF_CURSOR),
                 @StoredProcedureParameter(type = String.class, mode = ParameterMode.IN),
                 @StoredProcedureParameter(type = String.class, mode = ParameterMode.IN),
                 @StoredProcedureParameter(type = Date.class, mode = ParameterMode.IN)})
-public class Template1 implements Serializable {
+public class Template_1 implements Serializable {
 
     @Id
     @Column(name = "id")
