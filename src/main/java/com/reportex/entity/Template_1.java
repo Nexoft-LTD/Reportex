@@ -5,18 +5,19 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.math.BigInteger;
 import java.util.Date;
 
 @Entity
 @Table(name = "template_1")
 @Data
-@NamedStoredProcedureQuery(name = "template1.temp_1_2",
+@NamedStoredProcedureQuery(name = "template_1.temp_1_2",
         procedureName = "f_temp_1_2",
         resultClasses = {Template_1.class},
         parameters = {@StoredProcedureParameter(type = void.class, mode = ParameterMode.REF_CURSOR),
                 @StoredProcedureParameter(type = String.class, mode = ParameterMode.IN),
                 @StoredProcedureParameter(type = String.class, mode = ParameterMode.IN),
-                @StoredProcedureParameter(type = Date.class, mode = ParameterMode.IN)})
+                @StoredProcedureParameter(type = Integer.class, mode = ParameterMode.IN)})
 public class Template_1 implements Serializable {
 
     @Id

@@ -18,7 +18,7 @@ import java.util.Date;
                 @StoredProcedureParameter(mode = ParameterMode.IN, type = String.class),
                 @StoredProcedureParameter(mode = ParameterMode.IN, type = String.class),
                 @StoredProcedureParameter(mode = ParameterMode.IN, type = String.class),
-                @StoredProcedureParameter(mode = ParameterMode.IN, type = Date.class)})
+                @StoredProcedureParameter(mode = ParameterMode.IN, type = Integer.class)})
 public class Template_2 implements Serializable {
     @Id
     @Column(name = "id")

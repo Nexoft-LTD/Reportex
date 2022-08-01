@@ -11,6 +11,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.StoredProcedureQuery;
 import javax.transaction.Transactional;
+import java.math.BigInteger;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -27,10 +29,14 @@ public class Template_1Impl implements Template_1Service {
     @Override
     @Transactional
     public List<Template_1Dto> getTemp_1_2(String rowCode, String colCode, Date dt) {
-        StoredProcedureQuery spq = em.createNamedStoredProcedureQuery("template1.temp_1_2");
+
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
+        Integer integerDate = new Integer(simpleDateFormat.format(dt));
+
+        StoredProcedureQuery spq = em.createNamedStoredProcedureQuery("template_1.temp_1_2");
         spq.setParameter(2, rowCode);
         spq.setParameter(3, colCode);
-        spq.setParameter(4, dt);
+        spq.setParameter(4, integerDate);
         spq.execute();
         List<Template_1> template_1List = spq.getResultList();
 
