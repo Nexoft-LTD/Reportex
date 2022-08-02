@@ -7,8 +7,6 @@ import javax.persistence.*;
 @Table(name = "srx_user")
 @Entity
 @Data
-@Getter
-@Setter
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,22 +18,22 @@ public class User {
     @GeneratedValue(generator = "seq_user_id", strategy = GenerationType.SEQUENCE)
     private Integer id;
 
-    @Column(name = "name", length = 50, nullable = false)
+    @Column(name = "name", length = 50)
     private String name;
 
-    @Column(name = "surname", length = 50, nullable = false)
+    @Column(name = "surname", length = 50)
     private String surname;
 
-    @Column(name = "full_name", length = 100, nullable = false)
+    @Column(name = "full_name", length = 100)
     private String fullName;
 
-    @Column(name = "username", length = 100, nullable = false)
+    @Column(name = "username", length = 100)
     private String userName;
 
-    @Column(name = "password", length = 250, nullable = false)
+    @Column(name = "password", length = 250)
     private String password;
 
-    @Column(name = "email", length = 100, nullable = false)
+    @Column(name = "email", length = 100)
     private String email;
 
     @Column(name = "source", length = 50)

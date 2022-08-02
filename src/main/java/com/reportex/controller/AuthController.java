@@ -1,7 +1,7 @@
 package com.reportex.controller;
 
 import com.reportex.auth.TokenManager;
-import com.reportex.entity.LoginRequest;
+import com.reportex.entity.Login;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
@@ -26,13 +26,13 @@ public class AuthController {
 
     @PostMapping
     @ApiOperation(value = "For generate token ", response = String.class)
-    public ResponseEntity<String> login(@ApiParam(value = "Data type : LoginRequest")
-                                        @RequestBody LoginRequest loginRequest) throws Exception {
+    public ResponseEntity<String> login(@ApiParam(value = "Data type : Login")
+                                        @RequestBody Login login) throws Exception {
         try {
             authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
+                    new UsernamePasswordAuthenticationToken(login.getUsername(), login.getPassword()));
 
-            return ResponseEntity.ok(tokenManager.generateToken(loginRequest.getUsername()));
+            return ResponseEntity.ok(tokenManager.generateToken(login.getUsername()));
         } catch (Exception e) {
             throw e;
         }

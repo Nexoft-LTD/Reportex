@@ -4,7 +4,7 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(description = "This is login entity")
-public class LoginRequest {
+public class Login {
 
     @ApiModelProperty(notes = "Username for login", required = true)
     private String username;
@@ -12,10 +12,10 @@ public class LoginRequest {
     @ApiModelProperty(notes = "Password for login", required = true)
     private String password;
 
-    public LoginRequest() {
+    public Login() {
     }
 
-    public LoginRequest(String username, String password) {
+    public Login(String username, String password) {
         this.username = username;
         this.password = password;
     }

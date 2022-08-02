@@ -11,11 +11,13 @@ public interface UserService {
 
     List<UserDto> findAll();
 
-    Map<String,String> findAllUserName();
+    Map<String, String> findAllUserName();
 
     UserDto findById(int id);
 
     UserDto crateUser(UserDto userDto);
 
     void deleteUser(int id);
+
+    void validationUserData(UserDto userDto);
 }

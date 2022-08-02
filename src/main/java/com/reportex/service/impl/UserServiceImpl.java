@@ -70,7 +70,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDto crateUser(UserDto userDto) {
 
-        Assert.notNull(userDto, "Melumatlardan bos olan var.");
+        validationUserData(userDto);
 
         User user = new User();
         user.setName(userDto.getName());
@@ -79,6 +79,7 @@ public class UserServiceImpl implements UserService {
         user.setEmail(userDto.getEmail());
         user.setUserName(userDto.getUsername());
         user.setPassword(bCryptPasswordEncoder.encode(userDto.getPassword()));
+
 
         User userDb = userRepository.save(user);
         userDto.setId(userDb.getId());
@@ -89,6 +90,16 @@ public class UserServiceImpl implements UserService {
     @Override
     public void deleteUser(int id) {
         userRepository.deleteById(id);
+    }
+
+    @Override
+    public void validationUserData(UserDto input) {
+        UserDto.build(0, input.getName(),
+        input.getSurname(),
+                input.getFullName(),
+                input.getUsername(),
+                input.getPassword(),
+                input.getEmail());
     }
 
 

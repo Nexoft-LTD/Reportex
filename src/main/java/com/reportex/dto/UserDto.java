@@ -2,30 +2,40 @@ package com.reportex.dto;
 
 import lombok.*;
 
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
+@AllArgsConstructor(staticName = "build")
 @EqualsAndHashCode(of = {"id"})
 public class UserDto {
 
     private Integer id;
 
-    @NonNull
+    @NotNull(message = "Name shouldn't not be null")
+    @NotEmpty(message = "Name shouldn't not be empty")
     private String name;
 
-    @NonNull
+    @NotNull(message = "Surname shouldn't not be null")
+    @NotEmpty(message = "Surname shouldn't not be empty")
     private String surname;
 
-    @NonNull
+    @NotNull(message = "Full name shouldn't not be null")
+    @NotEmpty(message = "Full name shouldn't not be empty")
     private String fullName;
 
-    @NonNull
+    @Email(message = "Invalid email address")
+    @NotNull(message = "Email shouldn't not be null")
+    @NotEmpty(message = "Email shouldn't not be empty")
     private String email;
 
-    @NonNull
+    @NotNull(message = "Username shouldn't not be null")
+    @NotEmpty(message = "Username shouldn't not be empty")
     private String username;
 
-    @NonNull
+    @NotNull(message = "Password shouldn't not be null")
+    @NotEmpty(message = "Password shouldn't not be empty")
     private String password;
 }
